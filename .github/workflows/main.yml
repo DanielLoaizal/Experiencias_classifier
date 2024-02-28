@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'classifier_model.py'
+      - 'Experiencias_classifier/Classifier_experiencias.ipynb'
 
 jobs:
   build_model:
@@ -27,4 +27,4 @@ jobs:
     - name: Login to WandB
       run: wandb login ${{ secrets.WANDB_API_KEY }}
     - name: Run build.py
-      run: python classifier_model.py --IdExecution ${{ github.run_number }}
+      run: python Experiencias_classifier/Classifier_experiencias.ipynb --IdExecution ${{ github.run_number }}

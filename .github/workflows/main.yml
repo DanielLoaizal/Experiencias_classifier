@@ -26,5 +26,5 @@ jobs:
         pip install -r requirements.txt
     - name: Login to WandB
       run: wandb login ${{ secrets.WANDB_API_KEY }}
-    - name: Run build.py
+    - name: Run Classifier_experiencias.py
       run: python source/Classifier_experiencias.ipynb --IdExecution ${{ github.run_number }}

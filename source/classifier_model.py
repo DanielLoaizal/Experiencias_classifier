@@ -11,6 +11,7 @@ from sklearn import datasets, cluster
 from sklearn.model_selection import train_test_split
 from sklearn.utils.class_weight import compute_class_weight
 
+# Cambio
 from sklearn.exceptions import ConvergenceWarning
 warnings.filterwarnings("ignore", category=ConvergenceWarning)
 

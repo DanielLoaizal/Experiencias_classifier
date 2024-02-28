@@ -1,4 +1,4 @@
-name: Build Model like artifact to wandb
+name: Monitoring a model with wandb
 
 on:
   push:
